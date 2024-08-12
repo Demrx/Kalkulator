@@ -1,14 +1,14 @@
 from termcolor import colored
 
-print('=' * 31)
-print(colored("Kalkulator sederhana By : Demrx",'light_green'))
-print('=' * 31)
+print('=' * 36)
+print(colored("Kalkulator sederhana By : Santri IT",'light_green'))
+print('=' * 36)
 print(' 1. Tambah \t [+]')
 print(' 2. Kurang \t [-]')
 print(' 3. Kali \t [x]')
 print(' 4. Bagi \t [:]')
-print('=' * 31)
-print('=' * 31)
+print('=' * 36)
+print('=' * 36)
 
 operasi = input('[?] Pilih operasi (1/2/3/4) : ')
 if operasi == '1':
