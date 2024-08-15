@@ -1,15 +1,28 @@
+from rich.console import Console
+from rich.panel import Panel
 from termcolor import colored
 
-print('=' * 36)
-print(colored("Kalkulator sederhana By : Santri IT",'light_green'))
-print('=' * 36)
-print(' 1. Tambah \t [+]')
-print(' 2. Kurang \t [-]')
-print(' 3. Kali \t [x]')
-print(' 4. Bagi \t [:]')
-print('=' * 36)
-print('=' * 36)
+# HEADER TOOLS
+def print_header():
+    console = Console()
+    console.print(Panel.fit("[bold magenta]KALKULATOR[/bold magenta]\n[cyan]Mesin hitung sederhana[/cyan]", 
+                            title="Welcome", 
+                            subtitle="Santri IT", 
+                            border_style="green"))
 
+print_header()
+
+# ITEM KALKULATOR
+print('')
+print('[1] Tambah \t [+]')
+print('[2] Kurang \t [-]')
+print('[3] Kali \t [x]')
+print('[4] Bagi \t [:]')
+print('=' * 26)
+print('=' * 26)
+
+
+# OPERASI TOOLS
 operasi = input('[?] Pilih operasi (1/2/3/4) : ')
 if operasi == '1':
     print('[+] User memilih penjumlahan')
@@ -21,10 +34,12 @@ elif operasi == '4':
     print('[:] User memilih pembagian')
 else:
     print(colored("[!] Tidak valid",'red'))
+    exit()
 
 
 bilangan_1 = eval(input(colored("[1] Angka pertama : ",'yellow')))
 bilangan_2 = eval(input(colored("[2] Angka kedua : ",'yellow')))
+print("")
 
 #logika
 
